@@ -6,7 +6,7 @@ public class AppUser {
 	
 	private String username;
 	private String email;
-	private Insurance userId;
+	private int userId;
 	private String password;
 	private List<String> roles;
 	
@@ -14,7 +14,7 @@ public class AppUser {
 	public AppUser() {
 		super();
 	}
-	public AppUser(String username, String email, Insurance userId, String password, List<String> roles) {
+	public AppUser(String username, String email, int userId, String password, List<String> roles) {
 		super();
 		this.username = username;
 		this.email = email;
@@ -34,10 +34,10 @@ public class AppUser {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Insurance getUserId() {
+	public int getUserId() {
 		return userId;
 	}
-	public void setUserId(Insurance userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 	public String getPassword() {

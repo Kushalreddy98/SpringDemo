@@ -13,16 +13,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class AppUserMapper {
 	// Convert the UserDetails to ApppUser
-	public AppUser convertToAppUser(UserDetails userDetails) {
-		String username = userDetails.getUsername();
-		String password = userDetails.getPassword();
-		AppUser appUser = new AppUser();
-		appUser.setUsername(username);
-		appUser.setPassword(password);
+		public AppUser convertToAppUser(UserDetails userDetails) {
+			String username = userDetails.getUsername();
+			String password = userDetails.getPassword();
+			AppUser appUser = new AppUser();
+			appUser.setUsername(username);
+			appUser.setPassword(password);
 
-		return appUser;
-	}
-
+			return appUser;
+		}
+	
 	// From DataBase to FrontEnd
 	// Convert the ApppUser to UserDetails
 	public UserDetails convertToUserDetails(AppUser appUser) {
