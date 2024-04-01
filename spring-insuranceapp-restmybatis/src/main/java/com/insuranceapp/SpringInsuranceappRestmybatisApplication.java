@@ -19,7 +19,7 @@ public class SpringInsuranceappRestmybatisApplication implements CommandLineRunn
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		Insurance insurance=new Insurance("kB-101", "Bajaj", "Motor", 12, 2500);
+		new Insurance("kB-101", "Bajaj", "Motor", 12, 2500);
 //		service.addInsurance(insurance);
 	}
 
